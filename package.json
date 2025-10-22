@@ -1,17 +1,36 @@
 {
   "name": "cph-acoustics-website",
   "version": "1.0.0",
-  "description": "",
+  "description": "CPH Acoustics - Expert Audio Development Consulting Website",
   "main": "index.js",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "lint:fix": "next lint --fix",
+    "type-check": "tsc --noEmit",
+    "preview": "next build && next start"
   },
-  "keywords": [],
-  "author": "",
+  "keywords": [
+    "acoustic consulting",
+    "DSP development", 
+    "Bluetooth audio",
+    "hardware design",
+    "PCB design",
+    "microphone arrays",
+    "audio engineering",
+    "nextjs",
+    "typescript",
+    "tailwindcss"
+  ],
+  "author": "CPH Acoustics (Ulrik Kjems)",
   "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/your-username/cph-acoustics-website.git"
+  },
+  "homepage": "https://www.cph-acoustics.com",
   "dependencies": {
     "@radix-ui/react-accordion": "^1.2.12",
     "@radix-ui/react-avatar": "^1.1.10",
