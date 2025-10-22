@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
@@ -11,6 +12,7 @@ const services = [
   {
     title: "Embedded DSP Development",
     icon: "🔊",
+    image: "/circuit board.jpg",
     description: "Custom DSP Algorithm Development",
     features: [
       "Real-time audio processing",
@@ -22,6 +24,7 @@ const services = [
   {
     title: "Bluetooth Audio Solutions",
     icon: "📡",
+    image: "/bluetooth speaker.jpg",
     description: "Bluetooth Audio Stack",
     features: [
       "Low-latency audio transmission",
@@ -34,6 +37,7 @@ const services = [
   {
     title: "Hardware & PCB Design",
     icon: "⚡",
+    image: "/pcb.jpg",
     description: "Audio Hardware Design",
     features: [
       "Analog audio circuit design",
@@ -45,6 +49,7 @@ const services = [
   {
     title: "Acoustic Engineering",
     icon: "🎙️",
+    image: "/microphoe array.jpg",
     description: "Acoustic Solutions",
     features: [
       "Microphone array design",
@@ -139,14 +144,28 @@ export default function ServicesPage() {
                         <Link href="/contact">Learn More</Link>
                       </Button>
                     </div>
-                    <Card className="h-64 bg-gradient-to-br from-accent/10 to-accent-secondary/5">
-                      {/* Placeholder for image */}
+                    <Card className="h-64 bg-gradient-to-br from-accent/10 to-accent-secondary/5 overflow-hidden">
+                      <CardContent className="p-0 h-full relative">
+                        <Image 
+                          src={service.image}
+                          alt={service.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </CardContent>
                     </Card>
                   </>
                 ) : (
                   <>
-                    <Card className="h-64 bg-gradient-to-br from-accent-secondary/10 to-accent-tertiary/5">
-                      {/* Placeholder for image */}
+                    <Card className="h-64 bg-gradient-to-br from-accent-secondary/10 to-accent-tertiary/5 overflow-hidden">
+                      <CardContent className="p-0 h-full relative">
+                        <Image 
+                          src={service.image}
+                          alt={service.title}
+                          fill
+                          className="object-cover"
+                        />
+                      </CardContent>
                     </Card>
                     <div className="space-y-4">
                       <div className="text-5xl mb-4">{service.icon}</div>

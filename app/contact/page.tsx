@@ -234,15 +234,18 @@ export default function ContactPage() {
         </div>
       </section>
 
-      {/* Map Section Placeholder */}
-      <section className="h-96 bg-muted">
-        <div className="h-full flex items-center justify-center text-muted-foreground">
-          <div className="text-center">
-            <MapPin className="h-12 w-12 mx-auto mb-4 text-accent" />
-            <p>Map: Andebakkesti 6, 2000 Frederiksberg, Denmark</p>
-            <p className="text-sm mt-2">(Google Maps integration can be added here)</p>
-          </div>
-        </div>
+      {/* Map Section */}
+      <section className="h-96 bg-muted relative overflow-hidden">
+        <iframe
+          src="https://www.google.com/maps?q=Andebakkesti+6,+2000+Frederiksberg,+Denmark&output=embed"
+          width="100%"
+          height="100%"
+          style={{ border: 0 }}
+          allowFullScreen={true}
+          loading="lazy"
+          referrerPolicy="no-referrer-when-downgrade"
+          title="CPH Acoustics Location - Andebakkesti 6, 2000 Frederiksberg, Denmark"
+        />
       </section>
     </>
   );

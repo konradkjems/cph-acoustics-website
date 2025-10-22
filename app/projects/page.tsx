@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
@@ -13,36 +14,42 @@ const projects = [
   {
     title: "Wireless Earbuds DSP",
     category: "Consumer Electronics",
+    image: "/wireless earbuds.jpg",
     technologies: ["DSP", "Bluetooth", "Microphone Array"],
     description: "Custom DSP algorithms for active noise cancellation and spatial audio",
   },
   {
     title: "Premium Car Audio System",
     category: "Automotive",
+    image: "/car audio.jpg",
     technologies: ["Bluetooth", "Hardware"],
     description: "Complete Bluetooth audio stack integration with multi-zone control",
   },
   {
     title: "Conference Room System",
     category: "Professional Audio",
+    image: "/conference room.jpg",
     technologies: ["DSP", "Microphone Array", "Hardware"],
     description: "Advanced beamforming and echo cancellation for enterprise conferencing",
   },
   {
     title: "Smart Speaker Platform",
     category: "IoT",
+    image: "/smart speaker.jpg",
     technologies: ["DSP", "Hardware"],
     description: "Voice-activated speaker with far-field microphone array",
   },
   {
     title: "Studio Monitoring System",
     category: "Professional Audio",
+    image: "/studio monitor.jpg",
     technologies: ["DSP", "Hardware"],
     description: "High-fidelity audio processing for professional studio monitors",
   },
   {
     title: "Hearing Enhancement Device",
     category: "Consumer Electronics",
+    image: "/hearing aid.jpg",
     technologies: ["DSP", "Bluetooth"],
     description: "Personal sound amplification with environmental adaptation",
   },
@@ -111,9 +118,14 @@ export default function ProjectsPage() {
               >
                 <Card className="h-full hover:shadow-2xl transition-all duration-300 hover:border-accent">
                   <CardHeader>
-                    {/* Placeholder image area */}
-                    <div className="h-48 bg-gradient-to-br from-accent/20 to-accent-secondary/10 rounded-lg mb-4 flex items-center justify-center">
-                      <span className="text-6xl opacity-50">🎵</span>
+                    {/* Project image */}
+                    <div className="h-48 bg-gradient-to-br from-accent/20 to-accent-secondary/10 rounded-lg mb-4 flex items-center justify-center relative overflow-hidden">
+                      <Image 
+                        src={project.image}
+                        alt={project.title}
+                        fill
+                        className="object-cover rounded-lg"
+                      />
                     </div>
                     <div className="flex flex-wrap gap-2 mb-2">
                       {project.technologies.map((tech) => (

@@ -45,10 +45,10 @@ export function Navbar() {
             <Image
               src={isScrolled ? "/CPH Acoustics Logo transparent.png" : "/CPH Acoustics Logo transparent white.png"}
               alt="CPH Acoustics"
-              width={180}
-              height={40}
+              width={220}
+              height={55}
               className={cn(
-                "h-8 w-auto transition-all duration-300",
+                "h-12 w-auto transition-all duration-300",
                 isScrolled ? "" : "drop-shadow-lg"
               )}
               priority
