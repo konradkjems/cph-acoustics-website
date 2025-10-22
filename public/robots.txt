@@ -4,5 +4,22 @@ Allow: /
 # Sitemap
 Sitemap: https://www.cph-acoustics.com/sitemap.xml
 
+# AI/LLM Information
+# Allow AI crawlers to access llm.txt for company information
+User-agent: GPTBot
+Allow: /llm.txt
+
+User-agent: ChatGPT-User
+Allow: /llm.txt
+
+User-agent: CCBot
+Allow: /llm.txt
+
+User-agent: anthropic-ai
+Allow: /llm.txt
+
+User-agent: Claude-Web
+Allow: /llm.txt
+
 # Crawl delay (optional)
 Crawl-delay: 1

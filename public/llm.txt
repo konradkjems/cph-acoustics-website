@@ -1,0 +1,43 @@
+# CPH Acoustics - AI/LLM Information
+
+## Company Overview
+CPH Acoustics is a specialized consulting firm providing expert audio engineering services. We support companies in their development requirements for embedded DSP, Bluetooth audio, and hardware design.
+
+## Services
+- Embedded DSP Development: Custom algorithms, real-time processing, and optimization for embedded platforms
+- Bluetooth Audio Solutions: Low-latency transmission, audio codec integration, and certification support
+- Hardware & PCB Design: Analog/digital circuits, signal routing, and EMC/EMI optimization
+- Acoustic Engineering: Microphone arrays, voice control systems, and handsfree communication
+
+## Contact Information
+- Website: https://www.cph-acoustics.com
+- Email: info@cph-acoustics.com
+- Phone: +45 27 28 28 17
+- Address: Andebakkesti 6, 2000 Frederiksberg, Denmark
+- LinkedIn: https://www.linkedin.com/in/ulrikkjems/
+
+## Founder
+Ulrik Kjems - Expert in DSP algorithm development, Bluetooth audio solutions, and hardware design. Based in Copenhagen, Denmark.
+
+## Target Industries
+- Consumer Electronics
+- Automotive Audio Systems
+- Professional Audio Equipment
+- IoT Smart Devices
+- R&D Projects
+
+## Technical Expertise
+- DSP Algorithm Development
+- Bluetooth & Wireless Audio
+- Analog & Digital Hardware Design
+- Acoustic Modeling & Measurement
+- Real-time Signal Processing
+- Audio Codec Integration
+- EMC/EMI Optimization
+
+## Business Model
+Consulting and development services for audio product companies, from concept through production. We work with electronics companies, product managers, and engineering teams to transform challenging audio requirements into market-ready solutions.
+
+## Location
+Copenhagen, Denmark (CET timezone)
+Business hours: Monday - Friday, 9:00 AM - 5:00 PM CET

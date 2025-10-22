@@ -1,0 +1,46 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "name": "CPH Acoustics",
+  "description": "Expert audio engineering consulting specializing in embedded DSP development, Bluetooth audio solutions, and hardware design.",
+  "url": "https://www.cph-acoustics.com",
+  "logo": "https://www.cph-acoustics.com/CPH%20Acoustics%20Logo%20transparent.png",
+  "image": "https://www.cph-acoustics.com/CPH%20Acoustics%20Logo%20transparent.png",
+  "telephone": "+45 27 28 28 17",
+  "email": "info@cph-acoustics.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Andebakkesti 6",
+    "addressLocality": "Frederiksberg",
+    "postalCode": "2000",
+    "addressCountry": "DK"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": "55.6761",
+    "longitude": "12.5683"
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Denmark"
+  },
+  "serviceType": [
+    "Embedded DSP Development",
+    "Bluetooth Audio Solutions", 
+    "Hardware & PCB Design",
+    "Acoustic Engineering"
+  ],
+  "founder": {
+    "@type": "Person",
+    "name": "Ulrik Kjems",
+    "jobTitle": "Founder & Lead Consultant",
+    "description": "Expert in DSP algorithm development, Bluetooth audio solutions, and hardware design",
+    "url": "https://www.linkedin.com/in/ulrikkjems/"
+  },
+  "sameAs": [
+    "https://www.linkedin.com/in/ulrikkjems/"
+  ],
+  "openingHours": "Mo-Fr 09:00-17:00",
+  "priceRange": "$$",
+  "currenciesAccepted": "DKK, EUR, USD"
+}
